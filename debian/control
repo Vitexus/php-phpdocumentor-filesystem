@@ -1,0 +1,16 @@
+Source: php-phpdocumentor-filesystem
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/phpDocumentor/filesystem
+Vcs-Git: https://github.com/Vitexus/php-phpdocumentor-filesystem.git
+Rules-Requires-Root: no
+
+Package: php-phpdocumentor-filesystem
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer, php-webmozart-assert
+Description: File system abstraction for phpDocumentor
+ Provides a filesystem abstraction layer used by phpDocumentor,
+ wrapping league/flysystem for consistent file operations.
